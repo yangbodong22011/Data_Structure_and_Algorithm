@@ -26,9 +26,7 @@ char *getcode(huffmanTree,char,int,int [],char []);
 
 char *getcode(huffmanTree ht,char x,int n,int w[],char s[]) 
 {
-    char *str,*str2;
-    str = (char *)malloc(20 * sizeof(char));
-    str2 = (char *)malloc(20 * sizeof(char));
+    char str[20],str2[20];
     int i,j,k,t = 0;
     int m = 2*n-1;
     for(i = 1;i <= n;i++) {
